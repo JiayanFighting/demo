@@ -43,6 +43,7 @@ public class LoginController {
 	@RequestMapping("/auto")
 	public void testAuto(){
 		System.out.println("auto");
+		System.out.println("auto2");
 	}
 
 
