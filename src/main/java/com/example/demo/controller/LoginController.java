@@ -54,7 +54,7 @@ public class LoginController {
 			return;
 		}
 		System.out.println("restart go server success");
-		System.out.println("restart go server success2");
+		System.out.println("restart go server success3");
 	}
 
 }
