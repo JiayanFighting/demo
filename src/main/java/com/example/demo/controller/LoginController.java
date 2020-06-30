@@ -58,4 +58,8 @@ public class LoginController {
 		System.out.println("restart go server success4");
 	}
 
+	public void otherTest(){
+		System.out.println("hhhhhh");
+	}
+
 }
