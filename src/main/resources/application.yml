@@ -8,6 +8,10 @@ spring:
     url: jdbc:mysql://139.196.8.131:3306/springboot?useUnicode=true&characterEncoding=utf8
     username: root
     password: 12345678
+  devtools:
+    restart:
+      # 热部署开关
+      enabled: true
 mybatis:
   type-aliases-package: com.example.demo.dao
   mapper-locations: classpath:mapper/*Mapper.xml
