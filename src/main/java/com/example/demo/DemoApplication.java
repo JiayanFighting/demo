@@ -23,7 +23,8 @@ public class DemoApplication {
 	@GetMapping("/hello")
 	public String hello(@RequestParam(value = "name", defaultValue = "World") String name) {
 //		return String.format("Hello %s!", name);
-		return "/templates/login.html";
+		System.out.println("Hello java22334455667788");
+		return "/templates2345/6789login.html";
 	}
 
 	

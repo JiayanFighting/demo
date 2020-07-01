@@ -64,14 +64,12 @@
 <!--			<artifactId>spring-boot-starter-thymeleaf</artifactId>-->
 <!--		</dependency>-->
 		<!-- 访问html文件依赖begin -->
-
-		<!--devtools热部署-->
-
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-devtools</artifactId>
-			<optional>true</optional>
+		    <groupId>org.springframework.boot</groupId>
+		    <artifactId>spring-boot-devtools</artifactId>
+		    <optional>true</optional><!-- optional配置为true -->
 		</dependency>
+
 	</dependencies>
 
 	<build>
@@ -79,6 +77,17 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+     				     <fork>true</fork>
+			          <executable>true</executable>
+			        </configuration>
+				<dependencies>
+                			<dependency>
+                   	 			<groupId>org.springframework</groupId>
+                   				<artifactId>springloaded</artifactId>
+                    				<version>1.2.5.RELEASE</version>
+                			</dependency>
+            			</dependencies>
 			</plugin>
 		</plugins>
 
